@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fotoFakultas2"
+        android:layout_width="157dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/namaFakultas2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/namaFakultas2"
+        android:layout_width="254dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="56dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/deskripsiFakultas2"
+        app:layout_constraintEnd_toEndOf="@+id/deskripsiFakultas2"
+        app:layout_constraintStart_toStartOf="@+id/fotoFakultas2"
+        app:layout_constraintTop_toBottomOf="@+id/fotoFakultas2" />
+
+    <TextView
+        android:id="@+id/deskripsiFakultas2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/listFakultas"
+        app:layout_constraintEnd_toEndOf="@+id/listFakultas"
+        app:layout_constraintStart_toStartOf="@+id/listFakultas"
+        app:layout_constraintTop_toBottomOf="@+id/namaFakultas2" />
+
+    <TextView
+        android:id="@+id/listFakultas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/link"
+        app:layout_constraintEnd_toEndOf="@+id/link"
+        app:layout_constraintStart_toStartOf="@+id/link"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsiFakultas2" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/listFakultas" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="301dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="150dp"
+        android:text="EMAIL"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/link" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
